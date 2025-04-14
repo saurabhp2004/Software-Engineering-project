@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Registration System</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Course Registration</h1>
+    <form id="registrationForm">
+      <input type="text" id="studentName" placeholder="Student Name" required />
+      <input type="text" id="regNumber" placeholder="Registration Number" required />
+
+      <select id="branch" required>
+        <option value="" disabled selected>Select Branch</option>
+        <option value="CSE Core">CSE Core</option>
+        <option value="CSE AI/ML">CSE AI/ML</option>
+        <option value="CSE Cyber Security and Digital Forensics">CSE Cyber Security and Digital Forensics</option>
+        <option value="CSE Health Informatics">CSE Health Informatics</option>
+        <option value="CSE Ecommerce">CSE Ecommerce</option>
+        <option value="CSE Bioengineering">CSE Bioengineering</option>
+      </select>
+
+      <select id="course" required>
+        <option value="" disabled selected>Select Course</option>
+        <optgroup label="Graded Courses">
+          <option value="MAT1001 Calculus and Laplace Transforms">MAT1001 Calculus and Laplace Transforms</option>
+          <option value="MAT2002 Discrete Mathematics And Graph Theory">MAT2002 Discrete Mathematics And Graph Theory</option>
+          <option value="MAT3002 Applied Linear Algebra">MAT3002 Applied Linear Algebra</option>
+          <option value="MAT3003 Probability, Statistics And Reliability">MAT3003 Probability, Statistics And Reliability</option>
+          <option value="PHY1001 ENGINEERING PHYSICS">PHY1001 ENGINEERING PHYSICS</option>
+          <option value="CSA2001 Fundamentals in AI & ML">CSA2001 Fundamentals in AI & ML</option>
+          <option value="EEE1001 Electrical Circuits and Systems">EEE1001 Electrical Circuits and Systems</option>
+          <option value="MEE2014 Engineering Design and Modelling">MEE2014 Engineering Design and Modelling</option>
+          <option value="PLA1006 Lateral Thinking">PLA1006 Lateral Thinking</option>
+          <option value="SST1003 Professional Communication Skills for Engineers">SST1003 Professional Communication Skills</option>
+          <option value="SST2003 Dynamics of Workplace Communication">SST2003 Dynamics of Workplace Communication</option>
+          <option value="CSD3009 Data Structures and Analysis of Algorithms">CSD3009 Data Structures and Algorithms</option>
+          <option value="CSD4001 Software Vulnerability Testing">CSD4001 Software Vulnerability Testing</option>
+          <option value="CSD4002 Ethical Hacking">CSD4002 Ethical Hacking</option>
+          <option value="CSE2001 OOP with C++">CSE2001 OOP with C++</option>
+          <option value="CSE2003 Computer Architecture and Organization">CSE2003 Computer Architecture and Organization</option>
+          <option value="CSE2004 Theory of Computation and Compiler Design">CSE2004 Theory of Computation</option>
+          <option value="CSE3001 Database Management Systems">CSE3001 Database Management Systems</option>
+          <option value="CSE3003 Operating System">CSE3003 Operating System</option>
+          <option value="CSE3005 Software Engineering">CSE3005 Software Engineering</option>
+          <option value="CSE3006 Computer Networks">CSE3006 Computer Networks</option>
+          <option value="CSE4001 Internet and Web Programming">CSE4001 Internet and Web Programming</option>
+          <option value="ECE2002 Digital Logic Design">ECE2002 Digital Logic Design</option>
+          <option value="ECE3004 Microprocessors and Microcontrollers">ECE3004 Microprocessors and Microcontrollers</option>
+        </optgroup>
+        <optgroup label="Non-Graded Mandatory Courses">
+          <option value="CSE0001 Digital Literacy">CSE0001 Digital Literacy</option>
+          <option value="CSE0002 Open Source Software (Linux Admin)">CSE0002 Open Source Software (Linux Admin)</option>
+          <option value="EXC0001 Extra Curricular Activities">EXC0001 Extra Curricular Activities</option>
+          <option value="HUM0001 Ethics and Values">HUM0001 Ethics and Values</option>
+          <option value="HUM0002 Swachh Bharat">HUM0002 Swachh Bharat</option>
+          <option value="HUM0003 Indian Constitution">HUM0003 Indian Constitution</option>
+          <option value="HUM0004 Indian Heritage">HUM0004 Indian Heritage</option>
+        </optgroup>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <h2>Registered Students</h2>
+    <table id="studentsTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Reg No.</th>
+          <th>Branch</th>
+          <th>Course</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
